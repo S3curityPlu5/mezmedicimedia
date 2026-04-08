@@ -1,114 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-#contact {
-  background: #0b0f14;
-  padding: 40px;
-  border-radius: 10px;
-  max-width: 600px;
-  margin: 50px auto;
-  box-shadow: 0 0 15px #00ffe1;
-  border: 1px solid #00ffe1;
-  font-family: Arial, sans-serif;
-}
-
-#contact h2 {
-  color: #00ffe1;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-#contact input,
-#contact textarea {
-  width: 100%;
-  padding: 12px;
-  margin-top: 6px;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 5px;
-  background: #12181f;
-  color: #ffffff;
-  font-size: 14px;
-  box-shadow: inset 0 0 5px #00ffe1;
-}
-
-#contact input:focus,
-#contact textarea:focus {
-  outline: none;
-  box-shadow: 0 0 10px #00ffe1;
-}
-
-#contact button {
-  width: 100%;
-  padding: 12px;
-  background: #00ffe1;
-  color: #000;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#contact button:hover {
-  background: #00c9b3;
-  box-shadow: 0 0 10px #00ffe1;
-}
-</style>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MezMediciMedia - Creative AI Design Media</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MezMediciMedia - Creative AI Design Media</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #0b0f14;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(180deg, #0b0f14, #12181f);
+      border-bottom: 1px solid #00ffe1;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #00ffe1;
+      text-shadow: 0 0 10px #00ffe1;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #cfcfcf;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #00ffe1;
+      border-left: 4px solid #00ffe1;
+      padding-left: 10px;
+      margin-top: 40px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: #00ffe1;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-shadow: 0 0 8px #00ffe1;
+    }
+
+    /* CONTACT FORM */
+    #contact {
+      background: #0b0f14;
+      padding: 40px;
+      border-radius: 10px;
+      margin-top: 40px;
+      box-shadow: 0 0 15px #00ffe1;
+      border: 1px solid #00ffe1;
+    }
+
+    #contact input,
+    #contact textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 5px;
+      background: #12181f;
+      color: #ffffff;
+      font-size: 14px;
+      box-shadow: inset 0 0 5px #00ffe1;
+    }
+
+    #contact input:focus,
+    #contact textarea:focus {
+      outline: none;
+      box-shadow: 0 0 10px #00ffe1;
+    }
+
+    #contact button {
+      width: 100%;
+      padding: 12px;
+      background: #00ffe1;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #contact button:hover {
+      background: #00c9b3;
+      box-shadow: 0 0 10px #00ffe1;
+    }
+
+    /* SUCCESS POPUP */
+    #success-popup {
+      display: none;
+      background: #00ffe1;
+      color: #000;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      border-top: 1px solid #00ffe1;
+      color: #888;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <h1>Welcome to MezMediciMedia</h1>
-        <p>Your source for AI design media solutions</p>
-    </header>
-    <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>This site is the home of the new AI Design Media Company that is 
-                <b>MEZMEDICIMEDIA!</b>
-                
-                Here, we showcase a growing portfolio of AI-powered
-                image expansion work that takes any photograph and intelligently extends it in all directions: 3 feet
-                above, below, left, and right. The portfolio demonstrates how AI transforms a single image into an
-                immersive scene by generating the visual context around it while retaining the original aesthetic and
-                intent.</p>
-        </section>
-        <section id="services">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Video Production</li>
-                <li>Photography</li>
-                <li>Graphic Design</li>
-                <li>Web Development</li>
-                <li>Social Media Management</li>
-            </ul>
-        </section>
-        <section id="media">
-            <h2>Music & Video Remix Samples</h2>
-            <p>Coming soon: dedicated page for Progressive House ~5-minute video remix samples, advanced video
-                editing/effects, and adult-style master audio remix collections.</p>
-            <p><a href="media.html">Go to remix portfolio</a></p>
-        </section>
-        <section id="contact">
+
+<header>
+  <h1>Welcome to MezMediciMedia</h1>
+  <p>Your source for AI design media solutions</p>
+</header>
+
+<main>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      This site is the home of the new AI Design Media Company <b>MEZMEDICIMEDIA</b> —
+      a creative studio specializing in advanced AI‑powered image expansion.
+      Our portfolio showcases how a single photograph can be transformed into a fully immersive scene,
+      intelligently extended in all directions while preserving the original aesthetic and intent.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Video Production</li>
+      <li>Photography</li>
+      <li>Graphic Design</li>
+      <li>Web Development</li>
+      <li>Social Media Management</li>
+    </ul>
+  </section>
+
+  <section id="media">
+    <h2>Music & Video Remix Samples</h2>
+    <p>
+      Coming soon: a dedicated page for Progressive House ~5‑minute remix samples,
+      advanced video editing/effects, and adult‑style master audio remix collections.
+    </p>
+    <p><a href="media.html">Go to remix portfolio</a></p>
+  </section>
+
+  <section id="contact">
     <h2>Contact Us</h2>
-   <form id="contact-form" action="https://formspree.io/f/xpqokdwb" method="POST">
 
-  <input type="text" name="name" placeholder="Your Name" required>
+    <form id="contact-form" action="https://formspree.io/f/xpqokdwb" method="POST">
 
-  <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="name" placeholder="Your Name" required>
 
-  <textarea name="message" placeholder="Your
-</section>
-    </main>
-    <footer>
-        <p>&copy; 2024 MezMediciMedia. All rights reserved.</p>
-    </footer>
+      <input type="email" name="email" placeholder="Your Email" required>
+
+      <textarea name="message" placeholder="Your Message" required></textarea>
+
+      <button type="submit">Send Message</button>
+
+    </form>
+
+    <div id="success-popup">Message sent successfully!</div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2024 MezMediciMedia. All rights reserved.</p>
+</footer>
+
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -124,9 +205,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const response = await fetch(form.action, {
       method: "POST",
       body: data,
-      headers: {
-        'Accept': 'application/json'
-      }
+      headers: { 'Accept': 'application/json' }
     });
 
     if (response.ok) {
@@ -145,7 +224,5 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
-    
 </body>
-
 </html>
